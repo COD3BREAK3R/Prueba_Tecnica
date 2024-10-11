@@ -67,6 +67,10 @@ body {
 .header__buscador {
   width: 350px;
 }
+.header__buscador a {
+  text-decoration: none;
+  color: white;
+}
 .header__buscador .contenedor {
   padding: 0.5em;
   display: -webkit-box;
@@ -535,4 +539,89 @@ body {
   color: #ca2c09;
   font-weight: bold;
   cursor: pointer;
+}
+
+h3 {
+  font-size: 1.7em;
+  font-weight: 500;
+  color: #e58900;
+}
+
+.resultados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+.resultados .card {
+  max-width: 450px;
+  background-color: #fff;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.resultados .card img {
+  padding-inline: 0.5em;
+  padding-block: 0.5em;
+  width: 10em;
+}
+.resultados .card .hr2 {
+  border: none;
+  height: 1px;
+  background-color: rgba(165, 165, 165, 0.3098039216);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.resultados .card .card__content {
+  padding: 1em;
+  text-align: left;
+  border-left: 1px solid rgba(165, 165, 165, 0.3098039216);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+}
+.resultados .card .card__content h6 {
+  font-size: 1em;
+  color: #FFA723;
+}
+.resultados .card .card__content p {
+  font-size: 1em;
+}
+.resultados .card .card__content .card_badges {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  gap: 1em;
+}
+.resultados .card .card__content .card_badges .doc, .resultados .card .card__content .card_badges .xls, .resultados .card .card__content .card_badges .pdf {
+  padding: 0.2em;
+  border-radius: 5px;
+  color: white;
+  width: 50px;
+  text-align: center;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+.resultados .card .card__content .card_badges .doc {
+  background-color: #3096F5;
+}
+.resultados .card .card__content .card_badges .xls {
+  background-color: rgb(44, 192, 44);
+}
+.resultados .card .card__content .card_badges .pdf {
+  background-color: #F04F4F;
 }
