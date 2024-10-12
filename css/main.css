@@ -607,7 +607,9 @@ h3 {
           align-items: end;
   gap: 1em;
 }
-.resultados .card .card__content .card_badges .doc, .resultados .card .card__content .card_badges .xls, .resultados .card .card__content .card_badges .pdf {
+.resultados .card .card__content .card_badges .doc,
+.resultados .card .card__content .card_badges .xls,
+.resultados .card .card__content .card_badges .pdf {
   padding: 0.2em;
   border-radius: 5px;
   color: white;
@@ -624,4 +626,40 @@ h3 {
 }
 .resultados .card .card__content .card_badges .pdf {
   background-color: #F04F4F;
+}
+
+.paginacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: 60px;
+  gap: 1em;
+}
+.paginacion__boton {
+  border: 2px solid #FFA723;
+  padding: 0.8em;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFA723;
+  font-size: 1.3em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.paginacion__boton.selected {
+  background-color: #FFA723;
+  color: white;
+}
+.paginacion__boton .flecha.derecha {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
